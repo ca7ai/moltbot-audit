@@ -8,14 +8,14 @@
 
 > ⚠️ **DISCLAIMER**: This tool modifies system-level configurations and file permissions. Use at your own risk. The author is not responsible for any data loss, system instability, or locked-out accounts. Always test in a non-production environment first.
 
-## 💻 Supported Platforms
+## Supported Platforms
 
 *   **Linux** (Ubuntu, Debian, Fedora, CentOS, etc.) - ✅ Full Support
 *   **macOS** - ✅ Full Support
 *   **Windows** (10/11) - ⚠️ Partial Support
     *   *Note: File permission automation (`chmod 600`) is not available on Windows. The tool will skip this check and provide instructions for manual verification via File Explorer.*
 
-## 🛡️ Tools Included
+## Tools Included
 
 ### 1. `audit.py` - Security Scanner
 Non-destructive scanner that reports vulnerabilities.
@@ -28,7 +28,18 @@ Interactive script that fixes vulnerabilities found by the auditor.
 *   Enables Token Authentication (and generates strong tokens).
 *   Sets Channel Policies to `pairing` (prevents random DM access).
 
-## 🚀 Usage
+## Installation
+
+To get started, clone the repository and navigate into the project directory.
+
+```bash
+# Clone the repository
+git clone [https://github.com/your-username/moltbot-audit.git](https://github.com/your-username/moltbot-audit.git)
+
+# Enter the directory
+cd moltbot-audit
+
+## Usage
 
 No external dependencies required. Runs with standard Python 3.
 
@@ -43,7 +54,7 @@ python3 harden.py
 ```
 *Follow the interactive prompts to apply fixes.*
 
-## 📋 Example Output
+## Example Output
 
 ```text
 ╔════════════════════════════════════════╗
@@ -65,7 +76,7 @@ Target: /home/ubuntu/.clawdbot/clawdbot.json
     Run: clawdbot gateway restart
 ```
 
-## 🔒 Security Recommendations
+## Security Recommendations
 
 *   **Gateway Binding:** Never bind to `0.0.0.0` unless you are behind a VPN.
 *   **Authentication:** Ensure the Gateway has a strong token.
@@ -78,11 +89,11 @@ If your bot has the `exec` tool enabled (which allows running shell commands), y
 *   **Risk:** If `exec` is on + Channel is `open` = Anyone can delete your files.
 *   **Check:** Look in your `tools/` directory. If `exec` is present, be extra careful.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 This tool is designed to support the [Moltbot](https://github.com/moltbot/moltbot) Project. Special thanks to the Moltbot contributors for creating a powerful, MIT-licensed framework for AI agents.
 
-## ⚖️ License
+## License
 
 This project is Source Available under the PolyForm Noncommercial License 1.0.0.
 
