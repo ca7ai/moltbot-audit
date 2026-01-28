@@ -135,11 +135,12 @@ def check_secrets(config):
             for prefix in suspicious_prefixes:
                 if node.startswith(prefix):
                     masked = node[:4] + "..." + node[-4:]
+                    key_name = path.split('.')[-1] if '.' in path else "VAR_NAME"
                     print(f"    {Colors.WARNING}[WARN] Found potential API Key at '{path}': {masked}{Colors.ENDC}")
                     print(f"          {Colors.BOLD}RISK:{Colors.ENDC} Plaintext secrets in config files are easily leaked (git, backups, logs).")
                     print(f"          {Colors.BOLD}FIX:{Colors.ENDC}  1. Remove this key from clawdbot.json.")
                     print(f"               2. Set it as an environment variable instead (e.g. in ~/.bashrc or systemd).")
-                    print(f"               Example: export {k.upper()}_KEY=\"...\" (Check plugin docs for exact variable name)")
+                    print(f"               Example: export {key_name.upper()}=\"...\" (Check plugin docs for exact variable name)")
 
     walk_json(config)
 
