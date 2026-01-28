@@ -2,6 +2,13 @@
 
 **Moltbot-Audit** is a security configuration scanner for Moltbot/Clawdbot AI agents. It analyzes your `clawdbot.json` configuration file to identify security misconfigurations that could leave your agent vulnerable to unauthorized access or remote control.
 
+## 💻 Supported Platforms
+
+*   **Linux** (Ubuntu, Debian, Fedora, CentOS, etc.) - ✅ Full Support
+*   **macOS** - ✅ Full Support
+*   **Windows** (10/11) - ⚠️ Partial Support
+    *   *Note: File permission automation (`chmod 600`) is not available on Windows. The tool will skip this check and provide instructions for manual verification via File Explorer.*
+
 ## 🛡️ Tools Included
 
 ### 1. `audit.py` - Security Scanner
