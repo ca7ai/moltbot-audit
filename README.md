@@ -34,7 +34,7 @@ To get started, clone the repository and navigate into the project directory.
 
 ```bash
 # Clone the repository
-git clone [https://github.com/your-username/moltbot-audit.git](https://github.com/your-username/moltbot-audit.git)
+git clone [https://github.com/ca7ai/moltbot-audit.git](https://github.com/ca7ai/moltbot-audit.git)
 
 # Enter the directory
 cd moltbot-audit
