@@ -1,6 +1,12 @@
-# Moltbot-Audit (Clawd-Audit)
+# Moltbot-Audit
 
-**Moltbot-Audit** is a security configuration scanner for Moltbot/Clawdbot AI agents. It analyzes your `clawdbot.json` configuration file to identify security misconfigurations that could leave your agent vulnerable to unauthorized access or remote control.
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
+![License](https://img.shields.io/badge/license-Apache%202.0-orange)
+![Security](https://img.shields.io/badge/security-hardened-success)
+
+**Moltbot-Audit** is a security configuration scanner for Moltbot (formerly Clawdbot) AI agents. It analyzes your `clawdbot.json` configuration file to identify security misconfigurations that could leave your agent vulnerable to unauthorized access or remote control.
+
+> ⚠️ **DISCLAIMER**: This tool modifies system-level configurations and file permissions. Use at your own risk. The author is not responsible for any data loss, system instability, or locked-out accounts. Always test in a non-production environment first.
 
 ## 💻 Supported Platforms
 
@@ -71,3 +77,7 @@ This tool audits your *configuration*, not your *capabilities*.
 If your bot has the `exec` tool enabled (which allows running shell commands), you **must** ensure your Channel Policies are strict (`allowlist`).
 *   **Risk:** If `exec` is on + Channel is `open` = Anyone can delete your files.
 *   **Check:** Look in your `tools/` directory. If `exec` is present, be extra careful.
+
+## ⚖️ License
+
+This project is licensed under the Apache License 2.0. See the LICENSE file for details.
