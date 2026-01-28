@@ -78,6 +78,10 @@ If your bot has the `exec` tool enabled (which allows running shell commands), y
 *   **Risk:** If `exec` is on + Channel is `open` = Anyone can delete your files.
 *   **Check:** Look in your `tools/` directory. If `exec` is present, be extra careful.
 
+## 🙏 Acknowledgments
+
+This tool is designed to support the [Moltbot](https://github.com/moltbot/moltbot) Project. Special thanks to the Moltbot contributors for creating a powerful, MIT-licensed framework for AI agents.
+
 ## ⚖️ License
 
 This project is Source Available under the PolyForm Noncommercial License 1.0.0.
