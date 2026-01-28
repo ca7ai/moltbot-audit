@@ -56,25 +56,8 @@ python3 harden.py
 
 ## Example Output
 
-```text
-╔════════════════════════════════════════╗
-║          Moltbot-Hardener v1.0         ║
-║      Automated Security Remediation    ║
-╚════════════════════════════════════════╝
-Target: /home/ubuntu/.clawdbot/clawdbot.json
+<img width="653" height="422" alt="molt-bot" src="https://github.com/user-attachments/assets/fe4042a2-ba03-479f-8e72-b98287e7c706" />
 
-[*] Created backup at: /home/ubuntu/.clawdbot/clawdbot.json.bak.security
-
-[*] Checking Gateway Security...
-    [!] Gateway bound to '0.0.0.0' (Exposed).
-    >>> Change bind to 'loopback' (Localhost only)? [Y/n] y
-    [+] Gateway bind set to 'loopback'.
-
-[*] Applying Changes...
-    [+] Configuration saved successfully.
->>> NOTE: You must restart Clawdbot/Moltbot for changes to take effect.
-    Run: clawdbot gateway restart
-```
 
 ## Security Recommendations
 
