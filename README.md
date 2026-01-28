@@ -1,7 +1,7 @@
 # Moltbot-Audit
 
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
-![License](https://img.shields.io/badge/license-Apache%202.0-orange)
+![License](https://img.shields.io/badge/license-PolyForm%20Noncommercial-red)
 ![Security](https://img.shields.io/badge/security-hardened-success)
 
 **Moltbot-Audit** is a security configuration scanner for Moltbot (formerly Clawdbot) AI agents. It analyzes your `clawdbot.json` configuration file to identify security misconfigurations that could leave your agent vulnerable to unauthorized access or remote control.
@@ -80,4 +80,8 @@ If your bot has the `exec` tool enabled (which allows running shell commands), y
 
 ## ⚖️ License
 
-This project is licensed under the Apache License 2.0. See the LICENSE file for details.
+This project is Source Available under the PolyForm Noncommercial License 1.0.0.
+
+    ✅ Permitted: Personal use, research, hobby projects, and non-commercial organizations.
+
+    ❌ Prohibited: Any use with an anticipated commercial application without explicit permission from the author.
