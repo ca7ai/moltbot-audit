@@ -1,10 +1,10 @@
-# Moltbot-Audit
+# OpenClaw Audit
 
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
 ![License](https://img.shields.io/badge/license-PolyForm%20Noncommercial-red)
 ![Security](https://img.shields.io/badge/security-hardened-success)
 
-**Moltbot-Audit** is a security configuration scanner for Moltbot (formerly Clawdbot) AI agents. It analyzes your `clawdbot.json` configuration file to identify security misconfigurations that could leave your agent vulnerable to unauthorized access or remote control.
+**OpenClaw Audit** is a security configuration scanner for OpenClaw AI agents. It analyzes your `openclaw.json` configuration file to identify security misconfigurations that could leave your agent vulnerable to unauthorized access or remote control.
 
 > ⚠️ **DISCLAIMER**: This tool modifies system-level configurations and file permissions. Use at your own risk. The author is not responsible for any data loss, system instability, or locked-out accounts. Always test in a non-production environment first.
 
@@ -34,7 +34,7 @@ To get started, clone the repository and navigate into the project directory.
 
 ```bash
 # Clone the repository
-git clone [https://github.com/ca7ai/moltbot-audit.git](https://github.com/ca7ai/moltbot-audit.git)
+git clone https://github.com/ca7ai/moltbot-audit.git
 
 # Enter the directory
 cd moltbot-audit
@@ -56,7 +56,7 @@ python3 harden.py
 
 ## Example Output
 
-<img width="653" height="422" alt="molt-bot" src="https://github.com/user-attachments/assets/fe4042a2-ba03-479f-8e72-b98287e7c706" />
+<img width="653" height="422" alt="openclaw-audit" src="https://github.com/user-attachments/assets/fe4042a2-ba03-479f-8e72-b98287e7c706" />
 
 
 ## Security Recommendations
@@ -64,7 +64,7 @@ python3 harden.py
 *   **Gateway Binding:** Never bind to `0.0.0.0` unless you are behind a VPN.
 *   **Authentication:** Ensure the Gateway has a strong token.
 *   **Channel Policy:** Use `pairing` or `allowlist`. `open` policies allow strangers to use your bot.
-*   **API Keys:** Use environment variables, not hardcoded keys in `clawdbot.json`.
+*   **API Keys:** Use environment variables, not hardcoded keys in `openclaw.json`.
 
 ### ⚠️ A Note on `exec` (Shell Access)
 This tool audits your *configuration*, not your *capabilities*.
@@ -74,7 +74,7 @@ If your bot has the `exec` tool enabled (which allows running shell commands), y
 
 ## Acknowledgments
 
-This tool is designed to support the [Moltbot](https://github.com/moltbot/moltbot) Project. Special thanks to the Moltbot contributors for creating a powerful, MIT-licensed framework for AI agents.
+This tool is designed to support the [OpenClaw](https://github.com/openclaw/openclaw) Project. Special thanks to the OpenClaw contributors for creating a powerful, MIT-licensed framework for AI agents.
 
 ## License
 
