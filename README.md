@@ -34,10 +34,10 @@ To get started, clone the repository and navigate into the project directory.
 
 ```bash
 # Clone the repository
-git clone https://github.com/ca7ai/moltbot-audit.git
+git clone https://github.com/ca7ai/openclaw-audit.git
 
 # Enter the directory
-cd moltbot-audit
+cd openclaw-audit
 
 ## Usage
 
