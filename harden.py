@@ -21,7 +21,7 @@ class Colors:
 def print_banner():
     print(f"{Colors.HEADER}{Colors.BOLD}")
     print("╔════════════════════════════════════════╗")
-    print("║          Moltbot-Hardener v1.0         ║")
+    print("║          OpenClaw Hardener v1.0         ║")
     print("║      Automated Security Remediation    ║")
     print("╚════════════════════════════════════════╝")
     print(f"{Colors.ENDC}")
@@ -160,8 +160,8 @@ def fix_channels(config):
 
 def main():
     print_banner()
-    parser = argparse.ArgumentParser(description="Harden Moltbot/Clawdbot Configuration")
-    parser.add_argument("--config", help="Path to clawdbot.json", default="~/.clawdbot/clawdbot.json")
+    parser = argparse.ArgumentParser(description="Harden OpenClaw Configuration")
+    parser.add_argument("--config", help="Path to openclaw.json", default="~/.openclaw/openclaw.json")
     parser.add_argument("--dry-run", action="store_true", help="Don't write changes to disk")
     args = parser.parse_args()
 
@@ -198,8 +198,8 @@ def main():
             print(f"{Colors.WARNING}[DRY RUN] Config would be saved now.{Colors.ENDC}")
         else:
             save_config(config, path)
-            print(f"{Colors.WARNING}>>> NOTE: You must restart Clawdbot/Moltbot for changes to take effect.{Colors.ENDC}")
-            print(f"    Run: clawdbot gateway restart")
+            print(f"{Colors.WARNING}>>> NOTE: You must restart OpenClaw for changes to take effect.{Colors.ENDC}")
+            print(f"    Run: openclaw gateway restart")
     else:
         print(f"\n{Colors.GREEN}[+] No configuration changes were needed or applied.{Colors.ENDC}")
 

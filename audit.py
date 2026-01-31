@@ -19,7 +19,7 @@ class Colors:
 def print_banner():
     print(f"{Colors.HEADER}{Colors.BOLD}")
     print("╔════════════════════════════════════════╗")
-    print("║           Moltbot-Audit v1.0           ║")
+    print("║           OpenClaw Audit v1.0           ║")
     print("║     AI Agent Security Config Scanner   ║")
     print("╚════════════════════════════════════════╝")
     print(f"{Colors.ENDC}")
@@ -138,7 +138,7 @@ def check_secrets(config):
                     key_name = path.split('.')[-1] if '.' in path else "VAR_NAME"
                     print(f"    {Colors.WARNING}[WARN] Found potential API Key at '{path}': {masked}{Colors.ENDC}")
                     print(f"          {Colors.BOLD}RISK:{Colors.ENDC} Plaintext secrets in config files are easily leaked (git, backups, logs).")
-                    print(f"          {Colors.BOLD}FIX:{Colors.ENDC}  1. Remove this key from clawdbot.json.")
+                    print(f"          {Colors.BOLD}FIX:{Colors.ENDC}  1. Remove this key from openclaw.json.")
                     print(f"               2. Set it as an environment variable instead (e.g. in ~/.bashrc or systemd).")
                     print(f"               Example: export {key_name.upper()}=\"...\" (Check plugin docs for exact variable name)")
 
@@ -146,8 +146,8 @@ def check_secrets(config):
 
 def main():
     print_banner()
-    parser = argparse.ArgumentParser(description="Audit Moltbot/Clawdbot Configuration for Security Risks")
-    parser.add_argument("--config", help="Path to clawdbot.json", default="~/.clawdbot/clawdbot.json")
+    parser = argparse.ArgumentParser(description="Audit OpenClaw Configuration for Security Risks")
+    parser.add_argument("--config", help="Path to openclaw.json", default="~/.openclaw/openclaw.json")
     args = parser.parse_args()
 
     config, path = load_config(args.config)
